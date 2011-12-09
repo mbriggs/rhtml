@@ -28,6 +28,8 @@
   '(;("\\([A-Z][0-9a-zA-Z_]*\\)" . (1 font-lock-type-face prepend))
     ("[^_]\\<\\(alias\\|and\\|begin\\|break\\|case\\|catch\\|class\\|def\\|do\\|elsif\\|else\\|fail\\|ensure\\|for\\|end\\|if\\|in\\|module\\|next\\|not\\|or\\|raise\\|redo\\|rescue\\|retry\\|return\\|then\\|throw\\|super\\|unless\\|undef\\|until\\|when\\|while\\|yield\\|render\\)\\>[^_]" .
      (1 font-lock-keyword-face prepend))
+    ("\\(\".*\"\\)" . (1 font-lock-string-face prepend))
+    ("\\('.*'\\)" . (1 font-lock-string-face prepend))
     ("\\(@[0-9a-zA-Z_]*\\)" . (1 font-lock-variable-name-face prepend))
     ("\\(:[0-9a-zA-Z_]*\\)" . (1 font-lock-constant-face prepend))))
 
